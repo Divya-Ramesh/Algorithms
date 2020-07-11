@@ -1,4 +1,4 @@
-package Practice.Algorithms.LinkedList;
+package Practice.Algorithms.LinkedList.SinglyLinkedList;
 
 public class SinglyLinkedList {
     private Node head = null;
@@ -20,15 +20,14 @@ public class SinglyLinkedList {
             return;
         }
 
-        Node prev = head;
-        Node temp = head.next;
+        Node prev = null;
+        Node temp = head;
         while(temp != null) {
             Node next = temp.next;
             temp.next = prev;
             prev = temp;
             temp = next;
         }
-        head.next = null;
         head = prev;
     }
 

@@ -1,4 +1,4 @@
-package Practice.Algorithms.LinkedList;
+package Practice.Algorithms.LinkedList.SinglyLinkedList;
 
 public class ReverseSinglyLinkedList {
     public static void main(String[] args) {

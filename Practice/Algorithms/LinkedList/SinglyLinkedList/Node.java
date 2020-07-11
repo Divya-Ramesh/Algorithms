@@ -1,4 +1,4 @@
-package Practice.Algorithms.LinkedList;
+package Practice.Algorithms.LinkedList.SinglyLinkedList;
 
 public class Node {
     int value;
