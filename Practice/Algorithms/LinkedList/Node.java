@@ -1,4 +1,4 @@
-package com.Practice.Algorithms.LinkedList;
+package Practice.Algorithms.LinkedList;
 
 public class Node {
     int value;
