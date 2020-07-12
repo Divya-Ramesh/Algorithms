@@ -2,7 +2,7 @@ package Practice.Algorithms.LinkedList.SinglyLinkedList;
 
 public class SinglyLinkedList {
     private Node head = null;
-    public void add(int value) {
+    public void addToEndOfList(int value) {
         Node newVal = createNode(value);
         if (head == null) {
             head = newVal;
@@ -12,6 +12,18 @@ public class SinglyLinkedList {
                 temp = temp.next;
             }
             temp.next = newVal;
+        }
+    }
+
+    public void deleteNthFromEnd(int n) {
+
+    }
+
+    public void displayElementsInSSL() {
+        Node temp = head;
+        while(temp != null) {
+            System.out.println(temp.value);
+            temp = temp.next;
         }
     }
 
@@ -29,14 +41,6 @@ public class SinglyLinkedList {
             temp = next;
         }
         head = prev;
-    }
-
-    public void displayElementsInSSL() {
-        Node temp = head;
-        while(temp != null) {
-            System.out.println(temp.value);
-            temp = temp.next;
-        }
     }
 
     private Node createNode(int value) {
